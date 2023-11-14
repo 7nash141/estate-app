@@ -13,7 +13,7 @@ export default function ListingItem({ listing }) {
                         <FaMapMarkerAlt className="text-green-700 h-4 w-4" />
                         <p className="text-sm text-gray-700 truncate w-full">{listing.address}</p>
                     </div>
-                    <p className="text-sm text-gray-700 line-clamp-3">{listing.description}</p>
+                    <p className="text-sm text-gray-700 whitespace-nowrap">{listing.description}</p>
                     <p className="text-slate-700 mt-2 font-semibold">
                         {listing.offer ? '$' + listing.discountPrice.toLocaleString('en-US') : '$' + listing.regularPrice.toLocaleString('en-US')}
                         {listing.type === 'rent' && ' / Month'}
